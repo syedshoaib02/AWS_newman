@@ -9,7 +9,7 @@ phases:
       - npm i -g newman-reporter-html
   build:
     commands:
-      - newman run collection.json -e environment.json --reporters cli,junit --reporter-junit-export test-results.xml
+      - newman run qrcode_data.json -d data.csv --reporters html --reporter-html-export syed.html
 
 artifacts:
   base-directory: cdk.out
