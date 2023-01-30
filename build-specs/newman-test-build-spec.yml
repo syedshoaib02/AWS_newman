@@ -12,13 +12,5 @@ phases:
       - newman run qrcode_data.json -d data.csv --reporters html --reporter-html-export syed.html
 
 artifacts:
-  base-directory: cdk.out
   files:
     - '**/*'
-
-reports:
-  jest_reports:
-    files:
-      - 'test-report.xml'
-    file-format: JUNITXML
-    base-directory: 'test-reports'
